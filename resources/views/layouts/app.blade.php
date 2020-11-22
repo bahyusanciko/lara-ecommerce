@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Lucky Shop</title>
+    <title>Lucky Outfit</title>
     <link href="{{asset('frontend')}}/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
     <link href="{{asset('frontend')}}/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="{{asset('frontend')}}/css/theme.css" rel='stylesheet' type='text/css' />
@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo"><a href="{{url('/')}}" class="text-muted">
-                            <h4>Lucky Shop</h4>
+                            <h4>Lucky Outfit</h4>
                         </a></div>
                 </div>
                 <div class="col-md-8">
@@ -38,7 +38,7 @@
                                 </button>
                             </div>
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li><a href="{{url('/product')}}">Artikel</a></li>
                                     <li><a href="#">Blog</a></li>
@@ -56,10 +56,11 @@
         </div>
     </div>
     @yield('content')
+    
     <div class="footer">
         <div class="container">
             <div class="copy-right text-center">
-                <p>&#169Copyright Lucky Shop Indonesia</a>
+                <p>&#169Copyright Lucky Outfit Indonesia</a>
                 </p>
             </div>
         </div>
@@ -84,4 +85,5 @@
 <!--  jquery plguin -->
 
 @stack('js')
+
 </html>

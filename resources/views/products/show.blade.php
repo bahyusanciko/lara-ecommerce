@@ -60,7 +60,7 @@
                                 alt=""></a></li>
                     </ul>
                 </div>
-                <div class="m_desc">{!!$product->content!!}</div>
+                <div class="toogle">{!!$product->content!!}</div>
             </div>
             <div class="clearfix"></div>
         </div>

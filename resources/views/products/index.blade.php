@@ -57,49 +57,7 @@
         <div class="clearfix"></div>
         
     </div>
-    <div class="top">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="grid">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit
-                        dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus Quisque posuere diam et
-                        est hendrerit, eget sodales lectus.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="grid">
-                    <h2>Our Blog</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas orci et blandit
-                        dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus Quisque posuere diam et
-                        est hendrerit, eget sodales lectus.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="grid1 pull-left">
-                    <h2>Contact</h2>
-                    <address>
-                        <p>tryd online service</p>
-                        <p>12345 main street</p>
-                        <p>Newyork</p>
-                        <p><a href="#">info#@mystore.com</a></p>
-                        <p>555-58746-5475</p>
-                    </address>
-                </div>
-                <div class="grid2 pull-right">
-                    <div class="social-icons-set">
-                        <ul>
-                            <li><a class="facebook" href="#"> </a></li>
-                            <li><a class="twitter" href="#"> </a></li>
-                            <li><a class="vimeo" href="#"> </a></li>
-                            <div class="clear"> </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+
 </div>
 
 @push('js')
