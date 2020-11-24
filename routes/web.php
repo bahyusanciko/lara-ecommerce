@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'ProductController@index');
+Route::get('/', 'HomeController@index');
 Route::post('/susbcribe', 'NewsletterController@add')->name('newsletter.add');
 
 Route::get('/dashboard', 'AdminController@index')->name('admin.index')->middleware(['auth','admin']);

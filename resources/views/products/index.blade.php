@@ -5,7 +5,7 @@
     <div class="content">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Produk Terbaru</h2>
+                <h2>Artikel</h2>
                 <div class="col-md-6">
                     <select class="form-control orderby">
                         <option selected disabled value="">Pilih Berdasarkan</option>
@@ -41,6 +41,9 @@
                         <h2 class="text-center">Rp {{ number_format($product->price ,2,',','.')}}</h2>
                         <p class="text-center"><a href="{{ route('product.show',['product'=>$product->id]) }}">Lihat</a>
                         </p>
+                          <br>
+                                    <br>
+
                     </div>
                     <div class="clearfix"></div>
 

@@ -366,28 +366,28 @@ button.close {
 	padding: 20px;
 }
 .social-icons-set ul li a.facebook{
-	background: url(../images/image-sprit.png) no-repeat -246px 9px #4B5456;
+	background: url({{asset('frontend')}}/images/image-sprit.png) no-repeat -246px 9px #4B5456;
 	border-radius: 3em;
 }
 .social-icons-set ul li a.facebook:hover{
-	background: url(../images/image-sprit.png) no-repeat -246px -22px #4B5456;
+	background: url({{asset('frontend')}}/images/image-sprit.png) no-repeat -246px -22px #4B5456;
 }
 .social-icons-set ul li a:hover {
 	zoom: 1;	
 }
 .social-icons-set ul li a.twitter{
-	background: url(../images/image-sprit.png) no-repeat 10px 9px #4B5456;
+	background: url({{asset('frontend')}}/images/image-sprit.png) no-repeat 10px 9px #4B5456;
 	border-radius: 3em;
 }
 .social-icons-set ul li a.twitter:hover{
-	background: url(../images/image-sprit.png) no-repeat 10px -22px #4B5456;
+	background: url({{asset('frontend')}}/images/image-sprit.png) no-repeat 10px -22px #4B5456;
 }
 .social-icons-set ul li a.vimeo{
-	background: url(../images/image-sprit.png) no-repeat -33px 8px #4B5456;
+	background: url({{asset('frontend')}}/images/image-sprit.png) no-repeat -33px 8px #4B5456;
 	border-radius: 3em;
 }
 .social-icons-set ul li a.vimeo:hover{
-	background: url(../images/image-sprit.png) no-repeat -33px -23px #4B5456;;
+	background: url({{asset('frontend')}}/images/image-sprit.png) no-repeat -33px -23px #4B5456;;
 }
 .top{
 	margin-bottom:8%;
@@ -545,13 +545,13 @@ div.col-md-12.text-center h2 {
 	padding: 0 0.2em;
 }
 .admin span{
-	background:url(../images/admin-icon.png) no-repeat 0px 0px;
+	background:url({{asset('frontend')}}/images/admin-icon.png) no-repeat 0px 0px;
 }
 .p-date span{
-	background:url(../images/cal-icon1.png) no-repeat 0px 0px;
+	background:url({{asset('frontend')}}/images/cal-icon1.png) no-repeat 0px 0px;
 }
 .p-blog span{
-	background:url(../images/blog-icon.png) no-repeat 0px 0px;
+	background:url({{asset('frontend')}}/images/blog-icon.png) no-repeat 0px 0px;
 }
 .blog-info h3 a{
 	font-family: 'Open Sans', 'sans-serif';
@@ -671,13 +671,13 @@ div.col-md-12.text-center h2 {
 	cursor:pointer;
 }
 .hot span{
-	background:url(../images/hotel-icon.png) no-repeat 0px 0px;
+	background:url({{asset('frontend')}}/images/hotel-icon.png) no-repeat 0px 0px;
 }
 .plain span{
-	background:url(../images/plain.png) no-repeat 0px 0px;
+	background:url({{asset('frontend')}}/images/plain.png) no-repeat 0px 0px;
 }
 .Breakfast span{
-	background:url(../images/tea.png) no-repeat 0px 0px;
+	background:url({{asset('frontend')}}/images/tea.png) no-repeat 0px 0px;
 }
 .dest-place-opt-cast{
 	background: #1DD2AF;
@@ -710,7 +710,7 @@ div.col-md-12.text-center h2 {
 .p-h{
 	float: left;
 	width: 14%;
-	background: url(../images/border.png) no-repeat 100% 50%;
+	background: url({{asset('frontend')}}/images/border.png) no-repeat 100% 50%;
 	padding: 1em 0;
 }
 .p-h span{
@@ -737,7 +737,7 @@ div.col-md-12.text-center h2 {
 	font-size: 1.2em;
 }
 .dest{
-	background:url(../images/02.png) no-repeat 100% 50% #FFF;
+	background:url({{asset('frontend')}}/images/02.png) no-repeat 100% 50% #FFF;
 }
 .p-ww input[type="text"]{
 	font-family: 'Open Sans', sans-serif;
@@ -754,7 +754,7 @@ div.col-md-12.text-center h2 {
 	-o-border-radius: 0.15em;
 }
 .date{
-	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+	background:url({{asset('frontend')}}/images/cal-icon.png) no-repeat 100% 50% #FFF;
 }
 .p-ww{
 	font-size:1em;
@@ -1177,37 +1177,37 @@ li.fb a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png)no-repeat -24px -317px #555;
+	background: url({{asset('frontend')}}/images/img-sprite.png)no-repeat -24px -317px #555;
 }
 li.fb a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -24px -317px #6796fd;
+	background: url({{asset('frontend')}}/images/img-sprite.png) no-repeat -24px -317px #6796fd;
 }
 li.tw a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png)no-repeat -50px -317px #555;
+	background: url({{asset('frontend')}}/images/img-sprite.png)no-repeat -50px -317px #555;
 }
 li.tw a span:hover {
-	background: url(../images/img-sprite.png) no-repeat -50px -317px #20b8ff;
+	background: url({{asset('frontend')}}/images/img-sprite.png) no-repeat -50px -317px #20b8ff;
 }
 li.g_plus a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png)no-repeat -78px -319px #555;
+	background: url({{asset('frontend')}}/images/img-sprite.png)no-repeat -78px -319px #555;
 }
 li.g_plus a span:hover {
-	background: url(../images/img-sprite.png)no-repeat -78px -319px #ed402e;
+	background: url({{asset('frontend')}}/images/img-sprite.png)no-repeat -78px -319px #ed402e;
 }
 li.rss a span {
 	height: 30px;
 	width: 30px;
 	display: block;
-	background: url(../images/img-sprite.png)no-repeat -107px -318px #555;
+	background: url({{asset('frontend')}}/images/img-sprite.png)no-repeat -107px -318px #555;
 }
 li.rss a span:hover {
-	background: url(../images/img-sprite.png)no-repeat -107px -318px #ff9303;
+	background: url({{asset('frontend')}}/images/img-sprite.png)no-repeat -107px -318px #ff9303;
 }
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
 	display: none;
@@ -1276,11 +1276,11 @@ li.rss a span:hover {
 }
 .nbs-flexisel-nav-left {
 	left: 0px;
-	background: url(../images/img-sprite.png) no-repeat -166px -315px;
+	background: url({{asset('frontend')}}/images/img-sprite.png) no-repeat -166px -315px;
 }
 .nbs-flexisel-nav-right {
 	right: 0px;
-	background: url(../images/img-sprite.png) no-repeat -193px -315px;
+	background: url({{asset('frontend')}}/images/img-sprite.png) no-repeat -193px -315px;
 }
 .toogle {
 	margin-top: 4%;

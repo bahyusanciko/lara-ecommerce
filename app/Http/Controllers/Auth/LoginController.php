@@ -47,4 +47,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+        public function showLoginForm()
+    {
+        $data = [
+            'title' => 'Login',
+        ];
+        return view('auth.login', $data);
+    }
 }

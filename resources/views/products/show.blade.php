@@ -49,17 +49,19 @@
                 <div class="social_single">
                     <p>Beli Melalui</p>
                     <ul list-unstyled>
-                        <li><a target="_blank"  href="{{$product->shopee}}"><img src="https://aromaincense.id/wp-content/uploads/2018/10/shopee-icon-png-5.png"
+                        <li><a target="_blank" class="link" data-id="{{$product->shopee}}"><img src="https://aromaincense.id/wp-content/uploads/2018/10/shopee-icon-png-5.png"
                                 class="icon" alt=""></a></li>
-                        <li><a target="_blank"  href="{{$product->tokopedia}}"> <img
+                        <li><a target="_blank" class="link" data-id="{{$product->tokopedia}}"> <img
                                 src="https://ecs7.tokopedia.net/assets-about-frontend/master/img/Tokopedia_Mascot-36c1015eabb66a26893edeb227db71e0.png"
                                 class="icon" alt=""></a></li>
-                        <li><a target="_blank"  href="{{$product->bukalapak}}"><img src="https://s1.bukalapak.com/images/logo-new/bukalapak-icon-secondary@2x.png"
+                        <li><a target="_blank" class="link" data-id="{{$product->bukalapak}}"><img src="https://s1.bukalapak.com/images/logo-new/bukalapak-icon-secondary@2x.png"
                                 class="icon" alt=""></a></li>
                         <li><a class="wa" href="#"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" class="icon wa"
                                 alt=""></a></li>
                     </ul>
                 </div>
+                <hr>
+                <p><b>Deskripsi Produk</b></p>
                 <div class="toogle">{!!$product->content!!}</div>
             </div>
             <div class="clearfix"></div>
@@ -151,6 +153,8 @@
     </div>
     <div class="clearfix"></div>
 </div>
+
+<hr>
 @push('js')
 <script src="{{asset('frontend')}}/js/jquery.etalage.min.js"></script>
 <script type="text/javascript" src="{{asset('frontend')}}/js/jquery.flexisel.js"></script>
@@ -230,16 +234,26 @@
         let url = window.location.href;
         if (isMobile) {
             window.open(
-                `https://wa.me/6289643446893?text=Halo%20Cari%20LuckyShop,%20Apakah%2Produk%20Ini%20Terseedia%20? {{ $product->name }} `
+                `https://wa.me/6289526557294?text=Halo%20Cari%20LuckyShop,%20Apakah%2Produk%20Ini%20Terseedia%20? {{ $product->name }} `
                 );
         } else {
             window.open(
-                `https://web.whatsapp.com/send?phone=6289643446893&text=Halo%20Cari%20LuckyShop,%20Apakah%2Produk%20Ini%20Terseedia%20? {{ $product->name }} `,
+                `https://web.whatsapp.com/send?phone=6289526557294&text=Halo%20Cari%20LuckyShop,%20Apakah%2Produk%20Ini%20Terseedia%20? {{ $product->name }} `,
                 '_blank');
         }
     }
 
-
+    $(document).ready(function () {
+        $(".link").on("click", function () {
+            var dataId = $(this).attr("data-id");
+            console.log(dataId);
+            if (dataId == '-') {
+                openWhatApps()
+            }else{
+                window.open(dataId, '_blank');
+            }
+        });
+    });
 </script>
 @endpush
 @endsection

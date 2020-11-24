@@ -15,7 +15,8 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::orderByDesc('id')->paginate(20);
-        return view('products.index',compact(['products']));
+        $title = 'Artikel';
+        return view('products.index',compact(['products','title']));
         
     }
 
@@ -92,7 +93,9 @@ class ProductController extends Controller
 
     public function show(Product $product)
     {   
-        return view('products.show', compact ('product'));
+        $title = $product->name;
+        // dd($title);
+        return view('products.show', compact ('product','title'));
     }
 
     public function form()
@@ -189,11 +192,14 @@ class ProductController extends Controller
     public function orderby($type)
     {
         if ($type == 'max') {
+             $title = 'Harga Terbesar';
+
             $products = Product::orderByDesc('price')->paginate(20);
         }else{
+             $title = 'Harga Terendah';
             $products = Product::orderBy('price', 'asc')->paginate(20);
         }
-        return view('products.index',compact(['products']));
+        return view('products.index',compact(['products','title']));
     }
 
 }
