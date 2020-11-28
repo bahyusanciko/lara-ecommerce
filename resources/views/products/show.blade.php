@@ -234,11 +234,11 @@
         let url = window.location.href;
         if (isMobile) {
             window.open(
-                `https://wa.me/6289526557294?text=Halo%20Cari%20LuckyShop,%20Apakah%2Produk%20Ini%20Terseedia%20? {{ $product->name }} `
+                `https://wa.me/6289526557294?text=Halo%20Cari%20LuckyOutfit,%20Apakah%20Produk%20Ini%20Terseedia%20? {{ $product->name }} `
                 );
         } else {
             window.open(
-                `https://web.whatsapp.com/send?phone=6289526557294&text=Halo%20Cari%20LuckyShop,%20Apakah%2Produk%20Ini%20Terseedia%20? {{ $product->name }} `,
+                `https://web.whatsapp.com/send?phone=6289526557294&text=Halo%20Cari%20LuckyOutfit,%20Apakah%20Produk%20Ini%20Terseedia%20? {{ $product->name }} `,
                 '_blank');
         }
     }
