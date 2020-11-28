@@ -2,11 +2,11 @@
 
 @section ('content')
 <style>
-    @media screen and (min-width: 1025px) {
+    /* @media screen and (min-width: 1025px) {
         .img {
             height: 700px;
         }
-    }
+    } */
 </style>
 <div class="container-fluid">
     <div class="row">
@@ -16,39 +16,43 @@
                 <div id="fwslider">
                     <div class="slider_container">
                         <div class="slide">
-                            <img class="img" src="{{asset('image')}}/bg1.jpg" alt="" />
-                            <div class="slide_content">
-                                <div class="slide_content_wrap">
-                                    <p class="description">Produk Terbaru</p>
+                            <a href="{{ url('product') }}">
+                                <img class="img-responsive" src="{{asset('image')}}/banner1.png" alt="" />
+                                <div class="slide_content">
+                                    <div class="slide_content_wrap">
+                                        <!-- <p class="description">Produk Terbaru</p>
                                     <h4 class="title">Pakaian</h4>
                                     <p class="description"><a href="{{ url('product') }}">Lihat Koleksi</a></p>
-                                    <div class="slide-btns description">
+                                    <div class="slide-btns description"> -->
                                     </div>
                                 </div>
-                            </div>
                         </div>
-                        <div class="slide">
-                            <img src="{{asset('image')}}/bg1.jpg" alt="" />
-                            <div class="slide_content">
-                                <div class="slide_content_wrap">
-                                    <p class="description">Produk Terbaru</p>
-                                    <h4 class="title">Pakaian</h4>
-                                    <p class="description"><a href="{{ url('product') }}">Lihat Koleksi</a></p>
-                                    <div class="slide-btns description">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/slide -->
+                        </a>
                     </div>
-                    <div class="timers"> </div>
-                    <div class="slidePrev"><span> </span></div>
-                    <div class="slideNext"><span> </span></div>
+                    <div class="slide">
+                        <a href="{{ url('product') }}">
+                            <img class="img-responsive" src="{{asset('image')}}/bg1.jpg" alt="" />
+                            <div class="slide_content">
+                                <div class="slide_content_wrap">
+                                    <!-- <p class="description">Produk Terbaru</p>
+                                    <h4 class="title">Pakaian</h4>
+                                    <p class="description"><a href="{{ url('product') }}">Lihat Koleksi</a></p>
+                                    <div class="slide-btns description"> -->
+                                </div>
+                            </div>
+                    </div>
+                    </a>
                 </div>
-                <!--/slider -->
+                <!--/slide -->
             </div>
+            <div class="timers"> </div>
+            <div class="slidePrev"><span> </span></div>
+            <div class="slideNext"><span> </span></div>
         </div>
+        <!--/slider -->
     </div>
+</div>
+</div>
 </div>
 <div class="container">
     <div class="content">
@@ -80,7 +84,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <p class="text-center">{{ $product->name }} <br> <span>{{ $product->brand }}</span> </p>
+                            <p class="text-center">{{ substr($product->name ,0,20)}} <br> <span>{{ $product->brand }}</span> </p>
                             <h2 class="text-center">Rp {{ number_format($product->price ,2,',','.')}}</h2>
                             <p class="text-center"><a
                                     href="{{ route('product.show',['product'=>$product->id]) }}">Lihat</a>

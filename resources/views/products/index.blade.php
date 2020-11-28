@@ -12,7 +12,6 @@
                         <option value="min">Harga Terendah</option>
                         <option value="max">Harga Tertinggi</option>
                     </select>
-
                 </div>
             </div>
         </div>
@@ -37,7 +36,7 @@
                                 </a>
                             </div>
                         </div>
-                        <p class="text-center">{{ $product->name }} <br> <span>{{ $product->brand }}</span> </p>
+                        <p class="text-center">{{substr($product->name ,0,20) }} <br> <span>{{ $product->brand }}</span> </p>
                         <h2 class="text-center">Rp {{ number_format($product->price ,2,',','.')}}</h2>
                         <p class="text-center"><a href="{{ route('product.show',['product'=>$product->id]) }}">Lihat</a>
                         </p>
@@ -78,6 +77,7 @@
 
     })
 </script>
+
 <!--end slider -->
 @endpush
 @endsection
