@@ -1,6 +1,4 @@
-# therack E-commerce Website
-
-This my first project with laravel. It's not the best but worth sharing. The website have three type of users with different functionality.
+# Lara E-commerce Website
 
 Guest
 1. View Product
@@ -36,7 +34,7 @@ $php artisan serve
 
 ## Built With
 
-* Bootstrap- CSS framework
-* JQuery- Javascript framework
+* Bootstrap - CSS framework
+* JQuery - Javascript library 
 * Laravel - PHP framework
-* MySql- Databse
+* MySql- Database
