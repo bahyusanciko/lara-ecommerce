@@ -84,7 +84,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <p class="text-center">{{ substr($product->name ,0,)}} <br> <span>{{ $product->brand }}</span> </p>
+                            <p class="text-center">{{ substr($product->name ,0)}} <br> <span>{{ $product->brand }}</span> </p>
                             <h2 class="text-center">Rp {{ number_format($product->price ,2,',','.')}}</h2>
                             <p class="text-center"><a
                                     href="{{ route('product.show',['product'=>$product->id]) }}">Lihat</a>
