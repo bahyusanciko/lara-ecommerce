@@ -15,10 +15,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/3220/3220587.svg" type="image/svg" sizes="16x16">
 
-    <style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDJ394643L"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-JDJ394643L');
+    </script>
 
-    </style>
 </head>
 
 <body>
@@ -126,6 +132,7 @@
 <script type="text/javascript" src="{{asset('frontend')}}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{asset('frontend')}}/js/bootstrap.js"></script>
 <script type="text/javascript" src="{{asset('frontend')}}/js/bootstrap.min.js"></script>
+<script data-ad-client="ca-pub-5187204651628360" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!--  jquery plguin -->
 
 @stack('js')
